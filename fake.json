@@ -1,0 +1,82 @@
+[
+	{
+		"title": "Complete UI Design",
+		"status": "in progress",
+		"due": "2023-09-15",
+		"assignee": "John Doe",
+		"timeworked": "2hr",
+		"storypoints": 8
+	},
+	{
+		"title": "Fix Critical Bug",
+		"status": "to do",
+		"due": "2023-09-10",
+		"assignee": "Jane Smith",
+		"timeworked": "0hr",
+		"storypoints": 13
+	},
+	{
+		"title": "Code Review for Feature X",
+		"status": "review",
+		"due": "2023-09-12",
+		"assignee": "David Johnson",
+		"timeworked": "1.5hr",
+		"storypoints": 5
+	},
+	{
+		"title": "Automated Testing",
+		"status": "in progress",
+		"due": "2023-09-14",
+		"assignee": "Emily Brown",
+		"timeworked": "3hr",
+		"storypoints": 8
+	},
+	{
+		"title": "Update User Manual",
+		"status": "to do",
+		"due": "2023-09-20",
+		"assignee": "Michael Wilson",
+		"timeworked": "0hr",
+		"storypoints": 3
+	},
+	{
+		"title": "Implement Payment Gateway",
+		"status": "in progress",
+		"due": "2023-09-18",
+		"assignee": "Sophia Lee",
+		"timeworked": "5hr",
+		"storypoints": 13
+	},
+	{
+		"title": "Market Research",
+		"status": "to do",
+		"due": "2023-09-13",
+		"assignee": "William Clark",
+		"timeworked": "0hr",
+		"storypoints": 3
+	},
+	{
+		"title": "Deploy New Version",
+		"status": "in progress",
+		"due": "2023-09-16",
+		"assignee": "Olivia Davis",
+		"timeworked": "2hr",
+		"storypoints": 5
+	},
+	{
+		"title": "Resolve Customer Query",
+		"status": "in progress",
+		"due": "2023-09-11",
+		"assignee": "Daniel White",
+		"timeworked": "1.5hr",
+		"storypoints": 3
+	},
+	{
+		"title": "Team Meeting",
+		"status": "review",
+		"due": "2023-09-08",
+		"assignee": "Ava Garcia",
+		"timeworked": "0hr",
+		"storypoints": 1
+	}
+]
