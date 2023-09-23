@@ -13,7 +13,7 @@ function KanBanCard({
 	storypoints,
 }: KanbanCard) {
 	return (
-		<div className="shadow bg-white hover:-translate-y-2 p-2 cursor-pointer border isolate duration-[2000ms] hover:~translate-y-10 ~bg-blue-400 peer peer-hover:translate-y-10">
+		<div className=" bg-custom-white border border-gray-200 dark:border-gray-600 hover:-translate-y-2 p-2 cursor-pointer  isolate duration-[2000ms] peer peer-hover:translate-y-10 dark:bg-black rounded-lg shadow-lg ">
 			<h3>{title}</h3>
 			<p>update</p>
 			<p>days left</p>

@@ -8,8 +8,8 @@ export default function Page() {
 	const inProgress = fake.filter((i) => i.status === 'in progress');
 	const done = fake.filter((i) => i.status === 'review');
 	return (
-		<div className="flex justify-between px-3 text-center">
-			<Container color="bg-red-200">
+		<div className="flex justify-between px-3 text-center rounded-l">
+			<Container color="bg-red-200 dark:bg-board-done rounded-l-md">
 				<h3>todo</h3>
 				<div className="-space-y-12 ">
 					{todo.map((item) => (
@@ -17,7 +17,7 @@ export default function Page() {
 					))}
 				</div>
 			</Container>
-			<Container color="bg-green-200">
+			<Container color="bg-green-200 dark:board-done">
 				<h3>Progessing</h3>
 				<div className="-space-y-12">
 					{inProgress.map((item) => (
@@ -25,9 +25,9 @@ export default function Page() {
 					))}
 				</div>
 			</Container>
-			<Container color="bg-blue-200">
+			<Container color="bg-blue-200 dark:bg-board-blue rounded-r-md">
 				<h3>Done</h3>
-				<div className='-space-y-12'>
+				<div className="-space-y-12">
 					{done.map((item) => (
 						<KanBanCard key={item.title} {...item} />
 					))}

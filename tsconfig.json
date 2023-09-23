@@ -22,7 +22,8 @@
 			"@/*": ["./*"],
 			"@/constants/*": ["./utils/constants/*"],
 			"@/utils/*": ["./utils/*"],
-			"@/services/*": ["./utils/services/*"]
+			"@/services/*": ["./utils/services/*"],
+			"@/store/*": ["./store/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

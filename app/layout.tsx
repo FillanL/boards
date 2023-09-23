@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Navigation from './[components]/Navigation';
+import AppWrapper from './AppWrapper';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,11 +17,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
-			<body className={inter.className}>
+		<AppWrapper>
+			<body
+				className={`${inter.className} dark:bg-board-progress bg-custom-white min-w-screen min-h-screen dark:text-white text-black`}
+			>
 				<Navigation />
 				{children}
 			</body>
-		</html>
+		</AppWrapper>
 	);
 }
