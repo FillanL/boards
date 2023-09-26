@@ -18,6 +18,7 @@ export default function Page() {
 		e: DragEvent<HTMLDivElement>,
 		containerName: string
 	) {
+		e.currentTarget?.classList.add('opacity-5')
 		setTicketId((prev) => {
 			console.log(prev);
 			return (prev = containerName);
