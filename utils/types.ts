@@ -1,4 +1,5 @@
-export declare type KanbanCard = {
+export type Ticket = {
+	id: string;
 	title: string;
 	status: string;
 	due: string;
