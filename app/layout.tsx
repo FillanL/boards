@@ -19,7 +19,7 @@ export default function RootLayout({
 	return (
 		<AppWrapper>
 			<body
-				className={`${inter.className} dark:bg-board-progress bg-custom-white min-w-screen min-h-screen dark:text-white text-black`}
+				className={`${inter.className} dark:bg-board-progress bg-custom-white min-w-screen min-h-screen dark:text-white text-black relative`}
 			>
 				<Navigation />
 				{children}

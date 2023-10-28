@@ -1,0 +1,2 @@
+rebuild:
+	pnpm run dev
