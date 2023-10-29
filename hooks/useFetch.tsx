@@ -1,0 +1,111 @@
+import { Ticket } from '@/utils/types';
+import { useEffect, useState } from 'react';
+
+const ticketData: Ticket[] = [
+	{
+		id: 'c8f91714-5dcb-4584-b4e3-50533e5d847f',
+		title: 'Complete UI Design',
+		status: 'in progress',
+		due: '2023-09-15',
+		assignee: 'John Doe',
+		timeworked: '2hr',
+		storypoints: 8,
+	},
+	{
+		id: '07a28570-7439-4d44-9ddc-38a61a33e78a',
+		title: 'Fix Critical Bug',
+		status: 'to do',
+		due: '2023-09-10',
+		assignee: 'Jane Smith',
+		timeworked: '0hr',
+		storypoints: 13,
+	},
+	{
+		id: 'a03f3ca2-acc1-450b-9f7c-9ff7b57b74c5',
+		title: 'Code Review for Feature X',
+		status: 'review',
+		due: '2023-09-12',
+		assignee: 'David Johnson',
+		timeworked: '1.5hr',
+		storypoints: 5,
+	},
+	{
+		id: 'ee56bbda-90b1-44d5-bbb7-dc431d68e28f',
+		title: 'Automated Testing',
+		status: 'in progress',
+		due: '2023-09-14',
+		assignee: 'Emily Brown',
+		timeworked: '3hr',
+		storypoints: 8,
+	},
+	{
+		id: '0eabec10-8c02-4cde-8d14-67ad7d97a2f9',
+		title: 'Update User Manual',
+		status: 'to do',
+		due: '2023-09-20',
+		assignee: 'Michael Wilson',
+		timeworked: '0hr',
+		storypoints: 3,
+	},
+	{
+		id: '3a44f2b5-3704-4f5f-af47-845fd956c96e',
+		title: 'Implement Payment Gateway',
+		status: 'in progress',
+		due: '2023-09-18',
+		assignee: 'Sophia Lee',
+		timeworked: '5hr',
+		storypoints: 13,
+	},
+	{
+		id: '453f53c2-7e08-4ad1-b614-059e401115e5',
+		title: 'Market Research',
+		status: 'to do',
+		due: '2023-09-13',
+		assignee: 'William Clark',
+		timeworked: '0hr',
+		storypoints: 3,
+	},
+	{
+		id: '2f9dfbe0-32b9-4e41-8436-ccce5c826431',
+		title: 'Deploy New Version',
+		status: 'in progress',
+		due: '2023-09-16',
+		assignee: 'Olivia Davis',
+		timeworked: '2hr',
+		storypoints: 5,
+	},
+	{
+		id: '8c8fbab3-4f4e-497b-8381-b53d951e90da',
+		title: 'Resolve Customer Query',
+		status: 'in progress',
+		due: '2023-09-11',
+		assignee: 'Daniel White',
+		timeworked: '1.5hr',
+		storypoints: 3,
+	},
+	{
+		id: 'f8a86ea2-734a-4a44-a23d-1ce0349a1d8d',
+		title: 'Team Meeting',
+		status: 'review',
+		due: '2023-09-08',
+		assignee: 'Ava Garcia',
+		timeworked: '0hr',
+		storypoints: 1,
+	},
+];
+
+function usefetch() {
+	const [data, setData] = useState<Ticket[] | null>(null);
+	useEffect(() => {
+		const timeout = setTimeout(() => {
+			setData(ticketData);
+		}, 1000 * Math.random());
+
+		return () => {
+			clearTimeout(timeout);
+		};
+	}, []);
+
+	return [data];
+}
+export default usefetch;

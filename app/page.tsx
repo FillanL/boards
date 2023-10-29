@@ -1,7 +1,8 @@
+'use client'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="">hello </main>
+    <main className="">navigate to boards routes </main>
   )
 }

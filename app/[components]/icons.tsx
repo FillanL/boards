@@ -4,7 +4,7 @@ import appStore from '@/store/appStore';
 
 export function Moon() {
 	const toggleTheme = appStore((state) => state.toggleTheme);
-	
+
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

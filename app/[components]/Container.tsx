@@ -1,22 +1,20 @@
 'use client';
-import { DragEvent, memo} from 'react';
+import { TicketStatus } from '@/utils/types';
+import { DragEvent, memo, useCallback } from 'react';
 
 type props = {
 	children: React.ReactNode;
-	color: string;
 	containerName: string;
-	handleDragEnter: (
-		e: DragEvent<HTMLDivElement>,
-		containerName: string
-	) => void;
+	handleDragEnter: (e: DragEvent<HTMLDivElement>) => void;
 };
-function Container({ children, color, containerName, handleDragEnter }: props) {
+function Container({ children, handleDragEnter, containerName }: props) {
+	const color = "bg-red-200 dark:bg-board-done rounded-md"
+
 	return (
 		<div
 			className={`w-1/3 h-[75vh] ${color} p-2 `}
-			onDragEnter={(e: DragEvent<HTMLDivElement>) =>
-				handleDragEnter(e, containerName)
-			}
+			onDragEnter={handleDragEnter}
+			data-contianername={containerName}
 		>
 			{children}
 		</div>
